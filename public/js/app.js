@@ -1,7 +1,7 @@
 $(document).ready(function () {
     // getJson();
     // navActive();
-    console.log("TEST");
+    // console.log("TEST");
 })
 $(document).foundation();
 // When the user scrolls the page, execute myFunction
