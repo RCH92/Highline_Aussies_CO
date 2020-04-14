@@ -63,7 +63,7 @@ module.exports = function(app){
            var finalPaths = files.map(img =>{
                 return imgPath + img;
             });
-            res.json(finalPaths);
+            res.send(finalPaths);
         }
         
         
