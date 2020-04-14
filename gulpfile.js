@@ -9,7 +9,7 @@ var sassPaths = [
 ];
 
 function sass() {
-  return gulp.src('public/scss/*.scss')
+  return gulp.src('public/s/css/*.scss')
     .pipe($.sass({
       includePaths: sassPaths,
       outputStyle: 'compressed' // if css compressed **file size**
@@ -27,7 +27,7 @@ function sass() {
 //     server: "./"
 //   });
 
-//   gulp.watch("scss/*.scss", sass);
+//   gulp.watch("s/css/*.scss", sass);
 //   gulp.watch("*.html").on('change', browserSync.reload);
 // }
 function serve() {
@@ -36,10 +36,10 @@ function serve() {
   proxy: "localhost:5000" // makes a proxy for localhost:8080"
   });
 
-  gulp.watch("public/scss/*.scss", sass);
+  gulp.watch("public/s/css/*.scss", sass);
   gulp.watch("views/*.ejs").on('change', browserSync.reload);
   gulp.watch("views/partials/*.ejs").on('change', browserSync.reload);
-  gulp.watch("public/js/*.js").on('change', browserSync.reload);
+  gulp.watch("public//js/*.js").on('change', browserSync.reload);
 }
 
 gulp.task('sass', sass);

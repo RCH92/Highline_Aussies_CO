@@ -13,7 +13,8 @@ require("./routes/api-routes.js")(app);
 
 app.use(express.json());
 
-app.use('/public', express.static('./public'));
+app.use(express.static(__dirname + '/public'));
+// app.use('/public', express.static('./public'));
 app.use('/jquery', express.static('node_modules/jquery/dist'));
 app.use('/whatInput', express.static('node_modules/what-input/dist'));
 app.use('/foundation', express.static('node_modules/foundation-sites/dist'));
