@@ -39,7 +39,7 @@ function serve() {
   gulp.watch("public/s/css/*.scss", sass);
   gulp.watch("views/*.ejs").on('change', browserSync.reload);
   gulp.watch("views/partials/*.ejs").on('change', browserSync.reload);
-  gulp.watch("public//js/*.js").on('change', browserSync.reload);
+  gulp.watch("public/js/*.js").on('change', browserSync.reload);
 }
 
 gulp.task('sass', sass);
