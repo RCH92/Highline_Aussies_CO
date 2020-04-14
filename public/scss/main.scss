@@ -1,0 +1,543 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #mainContainer {
+    background-color: #7088B5;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    
+    min-height: 100vh;
+    
+}
+#contentBox{
+    background: whitesmoke;
+    // height:100vh;
+    width: 1200px;
+    box-shadow: 0px 0px 20px #141414;
+    margin: 50px 0px 50px 0px;
+    height: fit-content;
+}
+h1{
+    font-family: 'Great Vibes', cursive;
+}
+.galleryStyle{
+    h3{
+        font-family: 'Great Vibes', cursive;
+        margin: 25px 0px;
+        font-size: 4rem !important;
+    }
+    display: flex;
+    justify-content: center;
+    color:#7088b5;
+    
+}
+.bannerText{
+    display: flex;
+    justify-content: center;
+    color:#7088b5;
+    h1{
+        margin: 25px 0px;
+        font-size: 8rem !important;
+    }
+}
+.center{
+    margin: auto;
+    margin-top: -25px;
+    text-align: center;
+}
+#homeImg, #aboutImage, #contactImage{
+    display: flex;
+    justify-content: center;
+}
+#bannerImg{
+    img{
+        max-width: 100%;
+        width: 1200px;
+        height: 410px;
+    }
+    // display: flex;
+    // max-width: 100%;
+    // max-height: 30vh;
+    // height: 30vh;
+    // background-image: url(../Images/Alli_Banner.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // // background-size: inherit;
+}
+.imgBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img{
+        max-width: 100%;
+        width: 60%;
+        height: auto;
+    }
+}
+.secondImg{
+    
+}
+#homeBio, #aboutUsText, .mainStyle{
+    p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 220%;
+        display: block;
+        margin: 48px 160px;
+        text-align: justify;
+        color: #626569;
+    }
+    h4{
+        color: #626569;
+    }
+    ul{
+        margin-top: -48px;
+            list-style: none;
+            color: #626569; 
+
+    }
+    li{
+        
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 220%;
+        display: block;
+        margin: 0px 160px;
+        text-align: justify;
+        color: #626569;
+    }
+    li::before {content: "•"; color:#7088b5;
+        display: inline-block; width: 1em;
+        margin-left: -1em}
+    h3{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 22px;
+        line-height: 220%;
+        display: block;
+        margin: 48px 160px;
+        text-align: center;
+        color: black;
+    }
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: inherit;
+    z-index: 9999;
+  }
+#navList{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    padding: 6px 3px;
+    text-align: center;
+    background: #869bbc;
+    list-style: none;
+    margin: 0;
+    z-index: 10000;
+
+   
+    .divideLI{
+        margin: 1px;
+        min-width: 1px;
+    //     background: whitesmoke;
+    color: #869bbc;
+    }
+
+    .divideLine{
+        width: 1px;
+        height: 50%;
+        background: whitesmoke;
+        margin: auto;
+    }
+    li{
+        text-align: center;
+        background: #869bbc;
+        a{
+            color: whitesmoke;
+            font-family: 'EB Garamond', serif;
+        }
+        a:hover{
+        cursor:  url("/public/public/images/pawinv.png")0 0, auto;
+        
+        
+        }
+    }
+    li:hover{
+        cursor:  url("/public/public/images/pawinv.png")0 0, auto;
+    }
+    
+}
+.dropMenu{
+    .menu{
+        a{
+            margin: auto;
+        }
+        li:not(:last-child) {
+            border-bottom: solid 1px ghostwhite;
+        
+        
+        }
+    }
+}
+#contactWrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+    .contact{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        
+        .name{
+            p{
+                font-weight: bold;
+            }
+        }
+        p{
+            line-height: 100%;
+            margin: 2px 0px;
+            text-align: center;
+            font-size: 14px;
+            color: #7088b5;
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+}
+.copyright{
+    text-align: center;
+    margin: 30px 0px 10px 0px;
+    p{
+        font-size: 10px;
+    }
+}
+//alert
+
+.alert {
+    position: relative;
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }
+//our dogs
+
+.dogBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // align-items: center;
+
+    .dogDiv{
+        display: flex;
+        flex-direction: column;
+        width:400px;
+        height: auto;
+        image-rendering: crisp-edges;
+        margin: 5px;
+        img{
+            width: 400px;
+            height: 320px;
+            margin: 0px auto;
+        }
+        img:hover{
+            cursor: pointer;
+        }
+        h3{
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+}
+// bred by
+.bredBy .dogDiv{
+    img{
+        width: 400px;
+        height: 400px;
+        margin: 0px auto;
+    }
+}
+.todo{
+    text-align: center;
+}
+
+.sireDamDiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 40px 0px;
+
+        .sireDamElement{
+            width: 30%;
+            text-align: center;
+            h1{
+                font-size: 35px;
+                color:#7088b5;
+            }
+            h3{
+                font-size: 17px;
+            }
+            h4{
+                font-size: 14px;
+            }
+        }
+        
+    }
+    .fixedSize{
+        img{
+            height: 350px;
+        }
+    }
+.soloDogPage{
+
+    .bottomPad{
+        padding-bottom: 40px;
+    }
+    .dogMainImg{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 60%;
+        }
+    }
+    .dogSecondaryImg{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 50%;
+        }
+    }
+    .dogTitle{
+        h3{
+            font-size: 21px;
+            text-align: center;
+        }
+    }
+    
+    .dogText{
+        h3, h4{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            line-height: 220%;
+            display: block;
+            margin: 48px 160px;
+            text-align: justify;
+            color: #626569; 
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color:#7088b5;
+        }
+        h4{
+            text-align: center;
+            margin-top: 0;
+            padding-top: 0;
+        }
+        
+    }
+    
+    .dogText2{
+        padding-top: 60px;
+    }
+    .offspringBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        
+        .offspringElement{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .offspringSire{
+            width: 30%;
+            text-align: center;
+            // color: red;
+            margin:0px;
+            h1{
+                font-size: 35px;
+                color:#7088b5;
+            }
+            h3{
+                font-size: 17px;
+                margin: auto;
+                text-align: center;
+            }
+            h4{
+                font-size: 14px;
+            }
+        }
+        .offspring{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            .pupper{
+                width: 27%;
+                h3{
+                    font-size: 12px;
+                    margin: auto;
+                    text-align: center;
+                }
+                
+                img{
+                    
+                }
+            }
+        }
+    }
+    .bredByDog{
+        margin-top: -30px;
+    }
+}
+.lineTop{
+        margin: auto;
+        width: 70%;
+        border-top:1px #7088b5  solid ;
+        h1{
+            padding-top: 60px;
+        }
+    }
+.emmiTuckerImg{
+    height: 75%;
+    width: auto;
+}
+.lineBottom{
+    
+    width: 40%;
+    height: 1px;
+    padding-bottom: 40px;
+    border-bottom:1px #7088b5 solid;
+    margin: auto;
+}
+#offSpringFlex{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0px;
+        #offspringLine{
+            width: 40%;
+            border-bottom:1px #7088b5 solid;
+            h1{
+                margin: 0px;
+            }
+        }
+    }
+//info
+
+.links{
+    display: flex;
+    justify-content: center;
+    
+    p{
+        text-align: center;
+    }
+}
+
+//gallery
+
+.orbit{
+    margin: 30px;
+
+}
+
+//slick
+// .slider1{
+    
+//         width: 60%;
+//         margin: auto;
+//         margin-bottom: 40px;
+//         img{
+//             max-height: 550px;
+//             // height: 600px;
+//             width: auto;
+//             margin: auto;
+//         }
+//         button::before{
+//             color: #7088b5
+//         }
+// }
+.slider-for{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 40px;
+    img{
+        max-height: 550px;
+        // height: 600px;
+        width: auto;
+        margin: auto;
+    }
+}
+// .slick-prev{
+//       color: #7088b5 !important ; 
+//     }
+.sliderNavBox{
+    width: 80%;
+    margin: auto;
+    height: 300px;
+    padding: 20px;
+    
+}
+.slider-nav{
+    padding: 10px;
+    margin: auto;
+    
+    
+    button::before{
+        color: #7088b5
+    }
+    // box-shadow: 0px 0px 20px #141414;
+    
+    // border: 1px #7088b5 solid;
+    img{
+        padding: 5px 10px;
+        max-height: 200px;
+        margin: auto;
+        // width: 30%;
+        
+    }
+}
+//orbit
+
+.orbitBox{
+    height: 700px;
+    width: 80%;
+    margin: auto;
+    background: lightgrey;
+    .orbit-previous, .orbit-next{
+        color:#7088b5;
+    }
+}

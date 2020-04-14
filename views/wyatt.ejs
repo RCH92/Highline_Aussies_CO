@@ -1,0 +1,100 @@
+<div class="contentWrapper">
+    <div class="soloDogPage">
+        <div class="bannerText">
+            <h1>Wyatt</h1>
+        </div>
+
+        <!-- <div class="dogMainImg">
+            <img src="/public/public/images/lulu/lulu_gallery29.jpg" alt="">
+        </div> -->
+                <div class="sliderBox" data-dog='lulu'>
+                    <div class="slider-for">
+                        <div><img src="/public/public/images/bred_by/wyatt/wyatt_slider/wyatt_0.jpg" alt=""></div>
+                        <div><img src="/public/public/images/bred_by/wyatt/wyatt_slider/wyatt_1.jpg" alt=""></div>
+                        <div><img src="/public/public/images/bred_by/wyatt/wyatt_slider/wyatt_2.jpg" alt=""></div>
+                        <div><img src="/public/public/images/bred_by/wyatt/wyatt_slider/wyatt_3.jpg" alt=""></div>
+                </div></div>
+
+        <div class="dogTitle">
+            <h3>
+                <strong>Highline's Wyatt Of Tombstone</strong>
+                <br>
+                BN GS-O RS-N RNX
+               
+            </h3>
+        </div>
+        
+                
+                <div class="sliderNavBox">
+                    <div class="slider-nav">
+                        <div><img src="/public/public/images/bred_by/wyatt/wyatt_slider/wyatt_0.jpg" alt=""></div>
+                        <div><img src="/public/public/images/bred_by/wyatt/wyatt_slider/wyatt_1.jpg" alt=""></div>
+                        <div><img src="/public/public/images/bred_by/wyatt/wyatt_slider/wyatt_2.jpg" alt=""></div>
+                        <div><img src="/public/public/images/bred_by/wyatt/wyatt_slider/wyatt_3.jpg" alt=""></div>
+                </div></div>
+            
+            <div class="dogText1 dogText">
+            <h3>
+                <strong>Owned By:</strong> Shawn O'Hara<br>
+                <strong>Co-Owned By:</strong> Jacquie Hallenbeck
+
+            </h3>
+            <h4><a href="">Pedigree</a></h4>
+            
+        </div>
+        <div class="sireDamDiv">
+            <div class="sireDamElement">
+                <h1>Sire</h1>
+                <img src="/public/public/images/allie/Cole_1.png" alt="">
+                <h3>
+                      
+                      HOF CH <br><strong>Lyrics Night and Day </strong>ROMII, ROMXIII
+                    <br>ATDs OTDd JHDs<br> 
+                    <br>
+                    <a href="http://www.lyricaussies.com/cole.html"><strong>COLE</strong></a>
+
+                </h3>
+
+            </div>
+            <div class="sireDamElement">
+                <h1>Dam</h1>
+                <img src="/public/public/images/lulu/allie.jpg" alt="">
+                <h3>
+                    AKC/ASCA CH <strong>Calais Carolina Allie Oop</strong>
+                    <br>
+                    GS-N JS-O RS-O RNX RA RSA-E DNA-VP JSA-E-OP GSA-O
+                    <br>
+                    <a href="/ourdogs/allie"><strong>ALLIE</strong></a>
+                </h3>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<script>
+    $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav',
+            adaptiveHeight: false,
+            // variableWidth: true,
+            zindex: 1
+            // infinite: true
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            infinite: true,
+            centerMode: true,
+            focusOnSelect: true,
+            centerPadding: '0px',
+            variableWidth: true,
+            // adaptiveHeight: false,
+            zindex: 100,
+            swipe: true
+        });
+    </script>
