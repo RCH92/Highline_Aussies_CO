@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Colorado based Austrailian Shepherd breeder",
   "main": "server.js",
-  
+  "engines": {
+     "node": "10.x"
+   },
   "scripts": {
     "start-dev": "gulp",
     "build": "node server.js",
