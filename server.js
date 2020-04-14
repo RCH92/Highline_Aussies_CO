@@ -9,9 +9,9 @@ const PORT= process.env.PORT || 5000;
 
 app.use(expressLayouts);
 app.set('view engine', 'ejs');
-require("./routes/api-routes.js")(app);
+// require("./routes/api-routes.js")(app);
 
-app.use(express.json());
+// app.use(express.json());
 
 app.use(express.static(__dirname + '/public'));
 // app.use('/public', express.static('./public'));
