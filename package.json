@@ -4,12 +4,13 @@
   "description": "Colorado based Austrailian Shepherd breeder",
   "main": "server.js",
   "engines": {
-     "node": "10.x"
+     "node": "12.x"
    },
   "scripts": {
     "start-dev": "gulp",
     "build": "node server.js",
-    "watch": "gulp sass"
+    "watch": "gulp sass",
+    "start": "node server.js"
   },
   "author": "Ross Hallenbeck",
   "license": "MIT",
