@@ -5,9 +5,12 @@ var PORT= process.env.PORT || 5000;
 
 // Ejs
 // ================================================================================================
+
+
 app.use(expressLayouts);
 app.use(express.json());
 app.set('view engine', 'ejs');
+
 app.use('/css', express.static(__dirname + '/public/css'));
 app.use('/images', express.static(__dirname + '/public/images'));
 app.use('/js', express.static(__dirname + '/public/js'));
