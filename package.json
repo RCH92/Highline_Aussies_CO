@@ -8,7 +8,6 @@
   },
   "scripts": {
     "start-dev": "gulp",
-    "build": "node server.js",
     "watch": "gulp sass",
     "start": "node server.js"
   },
