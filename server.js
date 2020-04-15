@@ -8,7 +8,7 @@ var PORT= process.env.PORT || 5000;
 // Ejs
 // ================================================================================================
 // app.use('/css', express.st??atic(path.join(__dirname, '/public/css')));
-app.use('/css', express.static(path.join(process.env.PWD, '/public/css')));
+
 app.use(expressLayouts);
 app.use(express.json());
 app.set('view engine', 'ejs');
@@ -26,7 +26,7 @@ app.set('view engine', 'ejs');
 // app.use('/whatInput', express.static('node_modules/what-input/dist'));
 // app.use('/foundation', express.static('node_modules/foundation-sites/dist'));
 app.use('/', require(__dirname + '/routes/html-routes'));
-
+app.use('/css', express.static(path.join(process.env.PWD, 'public/css')));
 // app.use('/public', express.static('./public'));
 
 
