@@ -30,7 +30,7 @@ $(document).ready(function () {
         swipe: true
     });
     var currentPage = $('.sliderBox').data('dog');
-    getImagePaths(currentPage);
+    // getImagePaths(currentPage);
     
     
     

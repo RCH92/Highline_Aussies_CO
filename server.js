@@ -12,14 +12,14 @@ app.use(expressLayouts);
 app.use(express.json());
 app.set('view engine', 'ejs');
 
-app.use('/css', express.static(path.join(__dirname, '/public/css')));
-app.use('/images', express.static(__dirname + '/public/images'));
-app.use('/js', express.static(__dirname + '/public/js'));
-app.use('/files', express.static(__dirname + '/public/files'));
+// app.use('/css', express.static(path.join(__dirname, '/public/css')));
+// app.use('/images', express.static(__dirname + '/public/images'));
+// app.use('/js', express.static(__dirname + '/public/js'));
+// app.use('/files', express.static(__dirname + '/public/files'));
 
 
 
-// app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
 app.use('/jquery', express.static('node_modules/jquery/dist'));
 app.use('/whatInput', express.static('node_modules/what-input/dist'));
