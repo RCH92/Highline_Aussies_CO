@@ -1,17 +1,18 @@
 var express = require('express');
 var expressLayouts = require('express-ejs-layouts');
 var app = express();
+var path = require('path');
 var PORT= process.env.PORT || 5000;
 
 // Ejs
 // ================================================================================================
-
+app.use('/css', express.static(path.join(__dirname, '/public/css')));
 
 app.use(expressLayouts);
 app.use(express.json());
 app.set('view engine', 'ejs');
 
-app.use('/css', express.static(__dirname + '/public/css'));
+
 app.use('/images', express.static(__dirname + '/public/images'));
 app.use('/js', express.static(__dirname + '/public/js'));
 app.use('/files', express.static(__dirname + '/public/files'));
