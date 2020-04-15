@@ -9,7 +9,7 @@ var PORT= process.env.PORT || 5000;
 
 
 app.use(express.static(__dirname + '/public'));
-
+app.use('/css', express.static('./public/css'));
 app.use('/jquery', express.static('node_modules/jquery/dist'));
 app.use('/whatInput', express.static('node_modules/what-input/dist'));
 app.use('/foundation', express.static('node_modules/foundation-sites/dist'));
