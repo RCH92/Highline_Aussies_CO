@@ -2,7 +2,7 @@
 
 @import 'settings';
 @import 'foundation';
-@import 'motion-ui';
+// @import 'motion-ui';
 .clearfix{
     content: "";
     display: table;
@@ -82,9 +82,7 @@ h1{
         height: auto;
     }
 }
-.secondImg{
-    
-}
+
 #homeBio, #aboutUsText, .mainStyle{
     p{
         font-family: 'Open Sans', sans-serif;
@@ -414,9 +412,7 @@ h1{
                     text-align: center;
                 }
                 
-                img{
-                    
-                }
+                
             }
         }
     }

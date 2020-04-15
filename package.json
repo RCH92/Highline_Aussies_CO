@@ -2,7 +2,7 @@
   "name": "Highline-Austrailian-Shepherds",
   "version": "1.0.0",
   "description": "Colorado based Austrailian Shepherd breeder",
-  "main": "server.js",
+  "main": "gulpfile.js",
   "engines": {
     "node": "8.12.0"
   },
@@ -29,10 +29,10 @@
   "devDependencies": {
     "autoprefixer": "^9.1.5",
     "browser-sync": "^2.18.13",
-    "gulp": "^4.0.0",
-    "gulp-load-plugins": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-load-plugins": "^1.6.0",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.1"
+    "gulp-sass": "^4.0.2"
   },
   "repository": {
     "type": "git",
